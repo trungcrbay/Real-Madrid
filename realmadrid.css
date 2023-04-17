@@ -216,6 +216,11 @@ a {
     text-transform: uppercase;
 }
 
+.gallery_img:hover{
+    transform: translateY(-10px);
+    transition:0.4s;
+}
+
 .slide-pic {
     margin-top: 40px;
     width     : 100%;
