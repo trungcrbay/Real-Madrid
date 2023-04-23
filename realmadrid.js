@@ -14,7 +14,7 @@ formCloseBtn = document.querySelector('.form_close'),
 signupBtn = document.querySelector('#signup'),
 signupLink=document.querySelector('.sign_up_btn'),
 loginBtn = document.querySelector('#login'),
-pwShowHide = document.querySelector('.pw_hide')
+pwShowHide = document.querySelectorAll('.pw_hide')
 
 formOpenBtn.addEventListener("click",()=> formContainer.classList.remove("opacity"));
 formCloseBtn.addEventListener("click",()=> formContainer.classList.add("opacity"))
@@ -31,6 +31,19 @@ signupBtn.addEventListener("click",(e)=>{
 loginBtn.addEventListener("click",(e)=>{
     e.preventDefault();
     formContainer.classList.remove("active")
+})
+
+pwShowHide.forEach((icon)=>{
+    icon.addEventListener("click",() =>{
+        let getPwInput = icon.parentElement.querySelector("input");
+        if(getPwInput.type == "password"){
+            getPwInput.type= "text"
+            icon.classList.replace("fa-eye-slash","fa-eye")
+        }else{
+            getPwInput.type = "password";
+            icon.classList.replace("fa-eye", "fa-eye-slash");
+        }
+    })
 })
 
 
