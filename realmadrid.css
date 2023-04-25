@@ -36,7 +36,7 @@ a {
 }
 
 .opacity {
-  opacity: 0;
+  display: none;
 }
 
 .cup_c1 {
