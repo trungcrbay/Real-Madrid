@@ -200,7 +200,9 @@ a {
   gap: 40px;
   align-items: center;
 }
-
+.navbar{
+  background-color: #fff;
+}
 .navbar_language {
   display: flex;
   align-items: center;
@@ -211,7 +213,11 @@ a {
   display: flex;
   gap: 25px;
 }
-
+.all_navbar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .sign {
   position: relative;
   color: #808080;
@@ -614,7 +620,7 @@ a {
   justify-content: space-between;
 }
 
-.btn {
+.btn_btn {
   margin-top: 20px;
   width: 250px;
   height: 250px;
@@ -631,10 +637,10 @@ a {
   object-fit: cover;
 }
 
-.btn::after {
+.btn_btn::after {
   content: "";
   display: block;
-  width: 224px;
+  width: 250px;
   height: 50px;
   background-color: rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(2px);
@@ -650,7 +656,7 @@ a {
   position: absolute;
   z-index: 1;
   width: 50%;
-  left:15%;
+  left:10%;
   text-align: start;
 }
 
@@ -663,7 +669,7 @@ a {
   transition: 1s;
 }
 
-.btn:hover {
+.btn_btn:hover {
   transform: translateY(-17px);
   /*cho item chạy ngược lên trên*/
   cursor: pointer;
@@ -676,11 +682,11 @@ a {
   margin-bottom: 60px;
 }
 
-.btn:hover .btn{
+.btn_btn:hover .btn_btn{
   border:none;
 }
 
-.btn:hover .btn-name::before {
+.btn_btn:hover .btn-name::before {
   width: 100%;
 }
 
