@@ -127,7 +127,7 @@ li{
 .navbar-toggler{
   margin-left: 25px;
 }
-.navbar-nav {
+.navbar-gap {
   display: flex;
   gap:25px;
 }
