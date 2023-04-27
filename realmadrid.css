@@ -51,6 +51,57 @@ a {
   margin: 0 auto;
 }
 
+.navbar__first {
+  display: flex;
+  align-items: center;
+  gap:15px;
+  flex-grow: 1;
+}
+
+
+.navbar__item {
+  position: relative;
+  text-transform: uppercase;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  color: #808080;
+}
+
+.navbar__item::after,
+.sign::after {
+  content: "";
+  position: absolute;
+  background-color: #000;
+  height: 3px;
+  width: 0;
+  left: 0;
+  transition: 0.3s;
+  bottom: -10px;
+}
+
+.navbar__item:hover::after,
+.sign:hover::after {
+  width: 100%;
+}
+
+.navbar_react {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+.navbar{
+  background-color: #fff;
+}
+.navbar_language {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.navbar_sign {
+  display: flex;
+  gap: 25px;
+}
 
 .navbar__content {
   padding: 20px;
@@ -63,6 +114,9 @@ a {
   height: 70px;
 }
 
+li{
+  list-style: none;
+}
 .navbar_clb {
   margin-top: -15px;
   display: flex;
@@ -70,6 +124,13 @@ a {
   align-items: center;
 }
 
+.navbar-toggler{
+  margin-left: 25px;
+}
+.navbar-nav{
+  display: flex;
+  gap:20px;
+}
 .slider {
   padding-top: 100px;
   width: 1170px;
@@ -78,7 +139,17 @@ a {
   overflow: hidden;
   margin: 0 auto;
 }
-
+@media only screen and (max-width: 768px) {
+  .navbar__item {
+    font-size: 14px;
+  }
+  .navbar__content {
+    height: auto;
+    padding: 10px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
 .slides {
   width: 500%;
   display: flex;
@@ -163,56 +234,11 @@ a {
 #radio4:checked ~ .navigation-auto .audio_btn4 {
   background: #40D3DC;
 }
-
-.navbar__first {
-  display: flex;
-  gap: 15px;
-  align-items: center;
+.navbar-collapse{
+  flex-basis: 100%;
+  flex-grow: 1;
 }
 
-.navbar__item {
-  position: relative;
-  text-transform: uppercase;
-  font-size: 16px;
-  letter-spacing: 0.5px;
-  color: #808080;
-}
-
-.navbar__item::after,
-.sign::after {
-  content: "";
-  position: absolute;
-  background-color: #000;
-  height: 3px;
-  width: 0;
-  left: 0;
-  transition: 0.3s;
-  bottom: -10px;
-}
-
-.navbar__item:hover::after,
-.sign:hover::after {
-  width: 100%;
-}
-
-.navbar_react {
-  display: flex;
-  gap: 40px;
-  align-items: center;
-}
-.navbar{
-  background-color: #fff;
-}
-.navbar_language {
-  display: flex;
-  align-items: center;
-  gap: 7px;
-}
-
-.navbar_sign {
-  display: flex;
-  gap: 25px;
-}
 .all_navbar{
   display: flex;
   justify-content: center;

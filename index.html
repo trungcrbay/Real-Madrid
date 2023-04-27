@@ -16,32 +16,52 @@
 <body>
     <main>
         <header class="header">
-            <nav class="navbar">
+            <nav class="navbar navbar-expand-md bg-body-tertiary">
                 <div class="content navbar__content">
-                    <div class="navbar_clb">
+                    <div class="navbar_clb container-fluid">
+                        <!--Start Navbar-->
                         <div class="navbar__first">
-                            <a href="https://www.realmadrid.com/#imultimediaVideo" class="logo" target="_blank">
+                            <a href="https://www.realmadrid.com/#imultimediaVideo" class="logo " target="_blank">
                                 <img src="header_logo.svg" alt="Logo" class="logo_clb">
                                 <img src="./Image/14cupc1.png" alt="" class="cup_c1">
                             </a>
-                            <a href="#" class="navbar__item">
-                                The Club
-                            </a>
-                            <a href="#first_team" class="navbar__item">
-                                First Team
-                            </a>
-                            <a href="#manager" class="navbar__item">
-                                Manager
-                            </a>
-                            <a href="#news" class="navbar__item">
-                                News
-                            </a>
-                            <a href="#legend" class="navbar__item">
-                                Legend
-                            </a>
-                            <a href="#stadium" class="navbar__item">
-                                Bernanbeu Stadium
-                            </a>
+                            <button class="navbar-toggler collapsed btn-menu" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarNav">
+                                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                    <li class="nav-item">
+                                        <a href="#" class="navbar__item">
+                                            The Club
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#first_team" class="navbar__item">
+                                            First Team
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#manager" class="navbar__item">
+                                            Manager
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#news" class="navbar__item">
+                                            News
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#legend" class="navbar__item">
+                                            Legend
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#stadium" class="navbar__item">
+                                            Bernanbeu Stadium
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                         <div class="navbar_react">
                             <div class="navbar_language">
@@ -53,6 +73,8 @@
                                 <a href="#!" class="sign_up_btn">SIGN UP</a>
                             </div>
                         </div>
+                        <!--End Navbar-->
+                        
                     </div>
 
                 </div>
@@ -167,7 +189,7 @@
         </div>
         <!--End Slider-->
         <div class="first_team" id="first_team">
-            <div class="content">
+            <div class="content container-fluid">
                 <div class="first-team-up">
                     <h2 class="first_team_h2 text_h2">FIRST TEAM</h2>
                     <img src="./Image/sodo.jpg" alt="" class="formation">
