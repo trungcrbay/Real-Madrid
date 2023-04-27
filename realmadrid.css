@@ -127,9 +127,9 @@ li{
 .navbar-toggler{
   margin-left: 25px;
 }
-.navbar-nav{
+.navbar-nav {
   display: flex;
-  gap:20px;
+  gap:25px;
 }
 .slider {
   padding-top: 100px;
