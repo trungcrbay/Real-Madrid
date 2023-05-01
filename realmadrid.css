@@ -6,14 +6,26 @@
   padding: 0;
   box-sizing: border-box;
 }
+:root{
+  --primary-color:#fff;
+  --secondary-color: #212121;
+  --third-color:#808080;
+  --footer-color:#f8f8f8;
+}
 
+.dark-theme{
+  --primary-color:#000106;
+  --secondary-color:  #fff;
+  --third-color:#ffffff;
+  --footer-color:#000106;
+}
 html {
   scroll-behavior: smooth;
 }
 
 body {
   height: 100vh;
-  background: #fff;
+  background: var(--primary-color);
   font-family: "Poppins", sans-serif;
 }
 
@@ -28,7 +40,7 @@ ul {
 
 a {
   text-decoration: none;
-  color: #000;
+  color: var(--secondary-color);
 }
 
 .margin-top {
@@ -37,6 +49,12 @@ a {
 
 .opacity {
   display: none;
+}
+
+#icon{
+  width: 35px;
+  height: 35px;
+  cursor:pointer;
 }
 
 .cup_c1 {
@@ -64,14 +82,14 @@ a {
   text-transform: uppercase;
   font-size: 16px;
   letter-spacing: 0.5px;
-  color: #808080;
+  color: var(--third-color);
 }
 
 .navbar__item::after,
 .sign::after {
   content: "";
   position: absolute;
-  background-color: #000;
+  background-color: var(--secondary-color);
   height: 3px;
   width: 0;
   left: 0;
@@ -108,7 +126,7 @@ a {
   position: fixed;
   width: 100%;
   z-index: 100;
-  background-color: #fff;
+  background-color: var(--primary-color);
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
   top: 0;
   height: 70px;
@@ -517,17 +535,23 @@ li{
   left: 20%;
   bottom: 0;
 }
-
+.carousel-control-next-icon,.carousel-control-prev-icon{
+  color:var(--secondary-color);
+}
+h2,p,span,.news_heading{
+  color:var(--secondary-color);
+}
 .text_h2 {
   position: relative;
   display: inline-block;
   text-transform: uppercase;
+  color:var(--secondary-color);
 }
 
 .text_h2::after {
   content: "";
   position: absolute;
-  background-color: #000;
+  background-color: var(--secondary-color);
   height: 3px;
   width: 100%;
   left: 0;
@@ -603,13 +627,13 @@ li{
 }
 
 .article_h3 {
-  color: #000;
+  color: var(--secondary-color);
 }
 
 .article_p {
   margin-top: 10px;
   font-style: italic;
-  color: #000;
+  color: var(--secondary-color);
 }
 
 .news_heading {
@@ -794,7 +818,7 @@ li{
   padding-top: 70px;
   display: flex;
   justify-content: space-between;
-  background: #f8f8f8;
+  background: var(--footer-color);
   padding-bottom: 90px;
 }
 
@@ -803,6 +827,7 @@ li{
   text-align: center;
   position: relative;
   margin-bottom: 10px;
+  color:var(--secondary-color);
 }
 
 .footer_h3::after {
@@ -856,6 +881,7 @@ li{
 
 .footer_p {
   text-align: center;
+ 
 }
 
 .list_sponsor {

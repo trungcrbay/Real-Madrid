@@ -46,4 +46,22 @@ pwShowHide.forEach((icon)=>{
     })
 })
 
+document.onkeydown= function(e){
+    switch(e.which){
+        case 27:
+            formContainer.classList.add("opacity")
+    }
+}
 
+var icon = document.getElementById("icon")
+var logoClb = document.getElementById("cup_c1")
+icon.onclick=function(){
+    document.body.classList.toggle("dark-theme")
+    if(document.body.classList.contains("dark-theme")){
+        icon.src = "./dark theme icon/sun.png"
+        logoClb.src="./Image/my_madrid.png";
+    }else{
+        icon.src = "./dark theme icon/moon.png"
+        logoClb.src="./Image/14cupc1.png";
+    }
+}
