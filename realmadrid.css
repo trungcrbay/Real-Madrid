@@ -402,8 +402,12 @@ li{
   text-decoration: underline;
 }
 
+.forgot_pw{
+  margin-top: 25px;
+}
+
 .checkbox {
-  margin-top: 10px;
+  margin-top: 25px;
   display: flex;
   white-space: nowrap;
   column-gap: 8px;
@@ -939,3 +943,14 @@ h2,p,span,.news_heading{
   height: 100%;
 }
 /*# sourceMappingURL=realmadrid.css.map */
+.error{
+  font-size: 13px;
+  margin: 5px;
+  font-weight: 500;
+  color:red;
+  display: none;
+}
+
+.input_box:has(:invalid:not(:placeholder-shown)) .error{
+  display: block;
+}

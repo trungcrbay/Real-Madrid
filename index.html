@@ -89,11 +89,13 @@
                     <h2>Log in</h2>
                     <div class="input_box">
                         <input type="email" placeholder="Enter your email" name="email"  required
-                            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" />
+                            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" class="input_box_1"/>
+                        <p class="error">Vui lòng nhập đúng email</p>
                         <i class="fa-regular fa-envelope email"></i>
                     </div>
                     <div class="input_box">
-                        <input type="password" placeholder="Enter your password" name="password" required />
+                        <input type="password" placeholder="Enter your password" minlength="6" name="password" required />
+                        <p class="error">Cần ít nhất 6 ký tự</p>
                         <i class="fa-regular fa-eye password"></i>
                         <i class="fa-sharp fa-solid fa-eye-slash pw_hide"></i>
                     </div>
@@ -126,13 +128,13 @@
                         <i class="fa-regular fa-envelope email"></i>
                     </div>
                     <div class="input_box">
-                        <input type="password" name="password" placeholder="Create your password" required />
+                        <input type="password" name="password" minlength="6" placeholder="Create your password" required />
                         <i class="fa-regular fa-eye password"></i>
                         <i class="fa-sharp fa-solid fa-eye-slash pw_hide"></i>
                     </div>
 
                     <div class="input_box">
-                        <input type="password" name="password" placeholder="Confirm your password" required />
+                        <input type="password" name="password" minlength="6" placeholder="Confirm your password" required />
                         <i class="fa-regular fa-eye password"></i>
                         <i class="fa-sharp fa-solid fa-eye-slash pw_hide"></i>
                     </div>
