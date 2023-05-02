@@ -415,7 +415,7 @@ li{
 }
 
 .checkbox input {
-  accent-color: #7deae8;
+  accent-color: #000;
 }
 
 .checkbox label {
@@ -949,6 +949,7 @@ h2,p,span,.news_heading{
   font-weight: 500;
   color:red;
   display: none;
+  text-align: start;
 }
 
 .input_box:has(:invalid:not(:placeholder-shown)) .error{
