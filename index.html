@@ -85,15 +85,15 @@
                 <i class="fa-solid fa-xmark form_close"></i>
             </a>
             <div class="form login_form">
-                <form action="#">
+                <form action="https://api-gateway.fullstack.edu.vn/action_page.php" method="POST">
                     <h2>Log in</h2>
                     <div class="input_box">
-                        <input type="email" placeholder="Enter your email" required
+                        <input type="email" placeholder="Enter your email" name="email"  required
                             pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" />
                         <i class="fa-regular fa-envelope email"></i>
                     </div>
                     <div class="input_box">
-                        <input type="password" placeholder="Enter your password" required />
+                        <input type="password" placeholder="Enter your password" name="password" required />
                         <i class="fa-regular fa-eye password"></i>
                         <i class="fa-sharp fa-solid fa-eye-slash pw_hide"></i>
                     </div>
@@ -118,21 +118,21 @@
             </div>
             <!--Sign up form-->
             <div class="signup_form signup-open">
-                <form action="#">
+                <form action="https://api-gateway.fullstack.edu.vn/action_page.php" method="POST">
                     <h2>Sign up</h2>
                     <div class="input_box">
-                        <input type="email" placeholder="Enter your email" required
+                        <input type="email" name="email" placeholder="Enter your email" required
                             pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" />
                         <i class="fa-regular fa-envelope email"></i>
                     </div>
                     <div class="input_box">
-                        <input type="password" placeholder="Create your password" required />
+                        <input type="password" name="password" placeholder="Create your password" required />
                         <i class="fa-regular fa-eye password"></i>
                         <i class="fa-sharp fa-solid fa-eye-slash pw_hide"></i>
                     </div>
 
                     <div class="input_box">
-                        <input type="password" placeholder="Confirm your password" required />
+                        <input type="password" name="password" placeholder="Confirm your password" required />
                         <i class="fa-regular fa-eye password"></i>
                         <i class="fa-sharp fa-solid fa-eye-slash pw_hide"></i>
                     </div>
