@@ -34,14 +34,6 @@
     .navbar__first{
         margin-top: 25px;
     }
-    .navbar{
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        z-index: 9993;
-        overflow: hidden;
-    }
     .news{
         margin-top: 120px;
     }
@@ -54,4 +46,29 @@
     .article_content{
         width: 100%;
     }
+    .advertising{
+        text-align: center;
+    }
+    .real_tv .content{
+        width: 100%;
+        position: relative;
+    }
+
+    .real_tv{
+        display: block;
+    }
+
+    .real_tv_img{
+        position: absolute;
+        top: 10%;
+        right:1%;
+        transform: translate(-50%, -50%);
+    }
+    .real_tv_list{
+        display: block;
+        margin-left: 0;
+        padding-top:40px;
+    }
+    
+    
 }

@@ -174,6 +174,32 @@ li{
   height: 650px;
 }
 
+.real_tv_list{
+  display: flex;
+  margin-left: 50px;
+  gap: 60px;
+}
+
+.real_tv_item{
+    text-align: center;
+    padding-top: 40px;
+}
+
+.real_tv_button{
+  width: 100px;
+  padding:5px;
+  border-radius: 15px;
+  background-color: #0255a5;
+  color:#fff;
+  outline: none;
+  border:none;
+}
+
+.real_tv{
+  margin-top: 100px;
+  display: none;
+}
+
 .slides input {
   display: none;
 }
