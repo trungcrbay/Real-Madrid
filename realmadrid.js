@@ -15,7 +15,9 @@ signupBtn = document.querySelector('#signup'),
 signupLink=document.querySelector('.sign_up_btn'),
 loginBtn = document.querySelector('#login'),
 pwShowHide = document.querySelectorAll('.pw_hide'),
-body = document.querySelector('body')
+body = document.querySelector('body'),
+copyright=document.querySelector('.text-center'),
+cupC1=document.querySelector('.cup_c1_real')
 
 formOpenBtn.addEventListener("click",()=> {
     formContainer.classList.remove("opacity")
@@ -69,8 +71,10 @@ icon.onclick=function(){
     if(document.body.classList.contains("dark-theme")){
         icon.src = "./dark theme icon/sun.png"
         logoClb.src="./Image/my_madrid.png";
+        copyright.style.borderTop = '1px solid #fff'
     }else{
         icon.src = "./dark theme icon/moon.png"
         logoClb.src="./Image/14cupc1.png";
+        
     }
 }

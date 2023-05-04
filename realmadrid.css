@@ -125,7 +125,7 @@ a {
   padding: 20px;
   position: fixed;
   width: 100%;
-  z-index: 100;
+  z-index: 10;
   background-color: var(--primary-color);
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
   top: 0;
@@ -261,6 +261,11 @@ li{
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.nav__bars-btn{
+  font-size: 2.3rem;
+  margin-right: 12px;
+  display: none;
 }
 .sign {
   position: relative;
@@ -837,7 +842,7 @@ h2,p,span,.news_heading{
 .footer_h3::after {
   content: "";
   position: absolute;
-  background-color: #000;
+  background-color: var(--secondary-color);
   height: 3px;
   width: 20%;
   left: 40%;
@@ -851,13 +856,17 @@ h2,p,span,.news_heading{
   gap: 25px;
 }
 
+.text-center{
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
 .footer_icon {
   font-size: 25px;
   color: #888888;
 }
 
 .footer_icon:hover {
-  color: #000;
+  color: var(--secondary-color);
 }
 
 .footer_part1 {
@@ -880,7 +889,7 @@ h2,p,span,.news_heading{
 }
 
 .footer_icon_p2 i:hover {
-  color: #000;
+  color: var(--secondary-color);
 }
 
 .footer_p {
@@ -890,6 +899,17 @@ h2,p,span,.news_heading{
 
 .list_sponsor {
   margin-top: 50px;
+}
+
+.cup_c1_real{
+  width: 69px;
+  height: 55px;
+  object-fit: contain;
+  display: none;
+}
+
+.stadium_flex span{
+  color:#fff;
 }
 
 .two_list {
@@ -954,4 +974,76 @@ h2,p,span,.news_heading{
 
 .input_box:has(:invalid:not(:placeholder-shown)) .error{
   display: block;
+}
+
+/*Mobile*/
+ .nav__input:checked ~ .nav__overlay{ 
+  display: block;
+  animation: fadeIn linear 0.3s;
+}
+
+
+ .nav__input:checked ~ .nav__mobile {
+  transform: translateX(0%);
+  opacity: 1;
+}
+
+.logo{
+  display: flex;
+}
+
+.nav__overlay{
+  position: fixed;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0; /*4 hướng bằng 0 => phủ kín màn hình*/
+  background: rgba(0,0,0,0.3);
+  display: none;
+}
+
+.nav__mobile{
+  position: fixed;
+  top:0;
+  left: 0;
+  bottom:0;
+  width: 320px;
+  max-width:100%;
+  opacity: 0;
+  background-color: #fff;
+  z-index: 333;
+  transform: translateX(-100%); /*đẩy ra khỏi màn hình*/
+  transition: all linear 0.3s;
+  
+}
+
+.nav__mobile-close{
+  font-size: 3rem;
+  color:#666;
+  position: absolute;
+  top:1rem;
+  right:1rem;
+  cursor: pointer;
+}
+
+@keyframes fadeIn{
+  from{
+      opacity: 0;
+  }
+  to{
+      opacity: 1;
+  }
+}
+
+.nav__mobile-list{
+  margin-top: 24px;
+}
+
+.nav__mobile-link{
+  text-decoration: none;
+  color:#333;
+  display: block;
+  padding:16px;
+  margin-left: 24px;
+  font-size: 1.4rem;
 }
