@@ -144,5 +144,8 @@
         ouline       : none;
         background   : #0255a5;
     }
+    .stadium_img_text{
+        display: block;
+    }
 
 }

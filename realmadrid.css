@@ -634,7 +634,9 @@ h2,p,span,.news_heading{
   color: #fff;
   font-size: 20px;
 }
-
+.stadium_img_text{
+  display: none;
+}
 .news {
   margin-top: 50px;
 }
