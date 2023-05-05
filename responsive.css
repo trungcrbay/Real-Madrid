@@ -40,7 +40,7 @@
     }
 
     .news {
-        margin-top: 120px;
+        margin-top: 80px;
     }
 
     .news_real {
@@ -107,21 +107,42 @@
     }
 
     .banner_heading {
-        position: absolute;
-        top:55%;
-        left: 12%;
-        width: 300px;
+        position   : absolute;
+        top        : 55%;
+        left       : 12%;
+        width      : 300px;
         line-height: 40px;
         text-align : center;
         font-size  : 20px;
         color      : var(--primary-color);
         font-family: 'Oswald', sans-serif;
     }
-    .banner_list_icon{
-        bottom:0;
-        position: relative;
-        left: -12%;
+
+    .banner_list_icon {
+        bottom         : 0;
+        position       : relative;
+        left           : -12%;
         justify-content: center;
+    }
+
+    .stadium_relative {
+        margin-top: 85px;
+        position  : none;
+    }
+
+    .stadium_flex span {
+        color: #ccc;
+    }
+
+    .stadium_img_text {
+        width: 230px;
+        margin:0 auto;
+        margin-top: 40px;
+        padding      : 20px;
+        border-radius: 20px;
+        border       : none;
+        ouline       : none;
+        background   : #0255a5;
     }
 
 }
