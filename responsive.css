@@ -1,74 +1,127 @@
 /*Mobile and Tablet*/
-@media(max-width: 1023px){
-    .hide-on-mobile-tablet{
+@media(max-width: 1023px) {
+    .hide-on-mobile-tablet {
         display: none;
     }
-    .cup_c1_real{
+
+    .cup_c1_real {
         display: block;
     }
 
 }
 
 /*Tablet*/
-@media(min-width:740px) and (max-width:1023px){
-    .hide-on-tablet{
+@media(min-width:740px) and (max-width:1023px) {
+    .hide-on-tablet {
         display: none;
     }
 }
 
 /*Mobile*/
-@media(max-width:739px){
-    .hide-on-mobile{
+@media(max-width:739px) {
+    .hide-on-mobile {
         display: none;
     }
 
-    .nav__bars-btn{
+    .nav__bars-btn {
         display: block;
     }
-    .navbar__content{
+
+    .navbar__content {
         padding: 10px;
     }
-    .logo{
-        gap:1px;
+
+    .logo {
+        gap: 1px;
     }
-    .navbar__first{
+
+    .navbar__first {
         margin-top: 25px;
     }
-    .news{
+
+    .news {
         margin-top: 120px;
     }
-    .news_real{
+
+    .news_real {
         display: block;
     }
-    .news1{
+
+    .news1 {
         width: 100%;
     }
-    .article_content{
+
+    .article_content {
         width: 100%;
     }
-    .advertising{
+
+    .advertising {
         text-align: center;
+        margin-top: 70px;
     }
-    .real_tv .content{
-        width: 100%;
+
+    .real_tv .content {
+        width   : 100%;
         position: relative;
     }
 
-    .real_tv{
+    .real_tv {
         display: block;
     }
 
-    .real_tv_img{
-        position: absolute;
-        top: 10%;
-        right:1%;
+    .real_tv_img {
+        position : absolute;
+        top      : 10%;
+        right    : 1%;
         transform: translate(-50%, -50%);
     }
-    .real_tv_list{
-        display: block;
+
+    .real_tv_list {
+        display    : block;
         margin-left: 0;
-        padding-top:40px;
+        padding-top: 40px;
     }
-    
-    
+
+    .real_tv_button span {
+        color: #fff;
+    }
+
+    .news_real {
+        margin-top: 40px;
+    }
+
+    .article1 {
+        padding-top: 50px;
+    }
+
+    .banner .content {
+        width: 100%;
+    }
+
+    .banner_img {
+        width: 100%;
+    }
+
+    .banner_content {
+        width: 100%;
+    }
+
+    .banner_heading {
+        position: absolute;
+        top:55%;
+        left: 12%;
+        width: 300px;
+        line-height: 40px;
+        text-align : center;
+        font-size  : 20px;
+        color      : var(--primary-color);
+        font-family: 'Oswald', sans-serif;
+    }
+    .banner_list_icon{
+        bottom:0;
+        position: relative;
+        left: -12%;
+        justify-content: center;
+    }
+
 }
