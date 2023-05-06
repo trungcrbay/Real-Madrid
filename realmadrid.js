@@ -1,12 +1,21 @@
 //Chuyển slide
 var counter =1;
-setInterval(function(){
+const sliderImage=setInterval(function(){
     document.getElementById('radio' + counter).checked= true;
     counter++;
     if(counter>4){
         counter=1;
     }
 },1500)
+const radioButtons = document.querySelectorAll('[name="btn-radio"]');
+radioButtons.forEach(function(radio) {
+    radio.onclick = function() {
+      if (this.checked = true) {
+        clearInterval(sliderImage);
+      }
+    }
+  });
+
 //Sign in / Sign up
 const formOpenBtn=document.querySelector('.form-open'),
 formContainer = document.querySelector('.form_container'),
@@ -17,7 +26,9 @@ loginBtn = document.querySelector('#login'),
 pwShowHide = document.querySelectorAll('.pw_hide'),
 body = document.querySelector('body'),
 copyright=document.querySelector('.text-center'),
-cupC1=document.querySelector('.cup_c1_real')
+cupC1=document.querySelector('.cup_c1_real'),
+navbar_contentColor=document.querySelector('.navbar__content')
+
 
 formOpenBtn.addEventListener("click",()=> {
     formContainer.classList.remove("opacity")
@@ -71,10 +82,11 @@ icon.onclick=function(){
     if(document.body.classList.contains("dark-theme")){
         icon.src = "./dark theme icon/sun.png"
         logoClb.src="./Image/my_madrid.png";
-        copyright.style.borderTop = '1px solid #fff'
+        copyright.style.borderTop = '1px solid #fff';
+        navbar_contentColor.style.boxShadow='5px 5px 5px blue'
     }else{
         icon.src = "./dark theme icon/moon.png"
         logoClb.src="./Image/14cupc1.png";
-        
+        navbar_contentColor.style.boxShadow='0 2px 4px 0 rgba(0, 0, 0, 0.2)'
     }
 }

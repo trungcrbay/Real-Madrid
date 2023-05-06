@@ -132,6 +132,8 @@ a {
   height: 70px;
 }
 
+
+
 li{
   list-style: none;
 }
@@ -654,6 +656,7 @@ h2,p,span,.news_heading{
 .news_real {
   display: flex;
   justify-content: space-between;
+  gap:20px;
 }
 
 .banner_img{
@@ -1120,6 +1123,7 @@ h2,p,span,.news_heading{
 
 .nav__mobile-list{
   margin-top: 24px;
+  display: inline-block;
 }
 
 .nav__mobile-link{

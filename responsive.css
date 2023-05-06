@@ -25,6 +25,7 @@
 
     .nav__bars-btn {
         display: block;
+        cursor:pointer;
     }
 
     .navbar__content {
@@ -147,5 +148,13 @@
     .stadium_img_text{
         display: block;
     }
-
+    .nav__mobile-link{
+        border-bottom: 1px solid #0255a5;
+        margin-left: 0;
+        padding-top: 16px;
+    }
+    .nav__mobile-list{
+        margin-top: 100px;
+    }
+    
 }
