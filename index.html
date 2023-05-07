@@ -137,6 +137,7 @@
                         <i class="fa-sharp fa-solid fa-eye-slash pw_hide"></i>
                     </div>
 
+                    
                     <div class="option_field">
                         <span class="checkbox">
                             <input type="checkbox" id="check" />
@@ -145,6 +146,27 @@
                         <a href="#!" class="forgot_pw">Forgot password?</a>
                     </div>
 
+                    <div class="fotgot_pw_block">
+                        <div class="input_box">
+                            <input type="email" placeholder="Your email registed" name="email" id="edit_email" required
+                                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" class="input_box_1"/>
+                            <p class="error">Vui lòng nhập đúng email</p>
+                            <label for="email" onclick="edit_email.focus()">
+                                <i class="fa-regular fa-envelope email"></i>
+                            </label>
+                        </div>
+                        <div class="input_box">
+                            <input type="text" placeholder="Fill in your OTP code" name="email" id="edit_email" required
+                            pattern = "[0-9]" class="input_box_1"/>
+                            <label for="email">
+                                <i class="fa-sharp fa-solid fa-mobile"></i>
+                            </label>
+                        </div>
+    
+                        <div class="option_field">
+                            <a href="#!" class="forgot_pw">Send your OTP code</a>
+                        </div>
+                    </div>
                     <a href="#!">
                         <button class="button_login">
                             <span>Login now</span>

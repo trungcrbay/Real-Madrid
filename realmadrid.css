@@ -1094,6 +1094,10 @@ h2,p,span,.news_heading{
   text-align: start;
 }
 
+.fotgot_pw_block{
+  display: none;
+}
+
 .input_box:has(:invalid:not(:placeholder-shown)) .error{
   display: block;
 }

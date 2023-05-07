@@ -32,7 +32,9 @@ const formOpenBtn = document.querySelector('.form-open'),
     createPW = document.getElementById('signup_pass'),
     confirmPW = document.getElementById('confirm'),
     confirmText = document.querySelector('.error_confirm'),
-    unconfirmText = document.querySelector('.error_unconfirm')
+    unconfirmText = document.querySelector('.error_unconfirm'),
+    forgotPW=document.querySelector('.forgot_pw'),
+    forgotPW_block=document.querySelector('.fotgot_pw_block')
 
 formOpenBtn.addEventListener("click", () => {
     formContainer.classList.remove("opacity")
@@ -42,6 +44,7 @@ formCloseBtn.addEventListener("click", () => {
     formContainer.classList.add("opacity")
     body.style.opacity = '1'
     overlay.style.display = 'none';
+    forgotPW_block.style.display="none"
 })
 
 signupLink.addEventListener("click", (e) => {
@@ -53,12 +56,17 @@ signupLink.addEventListener("click", (e) => {
 signupBtn.addEventListener("click", (e) => {
     e.preventDefault();
     formContainer.classList.add("active")
+    forgotPW_block.style.display="none"
 })
 loginBtn.addEventListener("click", (e) => {
     e.preventDefault();
     formContainer.classList.remove("active")
 })
 
+forgotPW.onclick=function(){
+    forgotPW_block.style.display="block"
+    
+}
 
 pwShowHide.forEach((icon) => {
     icon.addEventListener("click", () => {
@@ -89,6 +97,7 @@ document.onkeydown = function (e) {
         case 27:
             formContainer.classList.add("opacity")
             overlay.style.display = 'none';
+            forgotPW_block.style.display="none"
     }
 }
 
