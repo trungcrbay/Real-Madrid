@@ -27,24 +27,24 @@ pwShowHide = document.querySelectorAll('.pw_hide'),
 body = document.querySelector('body'),
 copyright=document.querySelector('.text-center'),
 cupC1=document.querySelector('.cup_c1_real'),
-navbar_contentColor=document.querySelector('.navbar__content')
-
+navbar_contentColor=document.querySelector('.navbar__content'),
+overlay=document.querySelector('.overlay__button')
 
 formOpenBtn.addEventListener("click",()=> {
     formContainer.classList.remove("opacity")
-    body.style.opacity = '0.8'
-    formContainer.style.opacity='1'
+    overlay.style.display = 'block';
 });
 formCloseBtn.addEventListener("click",()=>{
     formContainer.classList.add("opacity")
     body.style.opacity = '1'
+    overlay.style.display = 'none';
 })
 
 signupLink.addEventListener("click",(e)=>{
     e.preventDefault();
-    body.style.opacity = '0.8'
     formContainer.classList.add("active")
     formContainer.classList.remove("opacity")
+    overlay.style.display = 'block';
 })
 signupBtn.addEventListener("click",(e)=>{
     e.preventDefault();
@@ -72,6 +72,7 @@ document.onkeydown= function(e){
     switch(e.which){
         case 27:
             formContainer.classList.add("opacity")
+            overlay.style.display = 'none';
     }
 }
 

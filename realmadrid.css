@@ -331,7 +331,7 @@ li{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 101;
+  z-index: 404;
   background: #fff;
   padding: 25px;
   border-radius: 12px;
@@ -355,6 +355,10 @@ li{
 .language{
   display: block;
   margin :auto;
+}
+
+.login_form{
+  z-index: 404;
 }
 
 .form_container.active .login_form {
@@ -1085,6 +1089,17 @@ h2,p,span,.news_heading{
   bottom:0;
   left:0; /*4 hướng bằng 0 => phủ kín màn hình*/
   background: rgba(0,0,0,0.3);
+  display: none;
+}
+
+.overlay__button{
+  position: fixed;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0; /*4 hướng bằng 0 => phủ kín màn hình*/
+  background: rgba(0,0,0,0.7);
+  z-index:100;
   display: none;
 }
 
