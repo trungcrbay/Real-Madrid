@@ -690,6 +690,7 @@ h2,p,span,.news_heading{
   color:#fff;
   font-size: 35px;
   margin:  35px 10px;
+  font-family: "Oswald", sans-serif
 }
 
 .banner_heading-img{
@@ -1067,6 +1068,24 @@ h2,p,span,.news_heading{
 }
 /*# sourceMappingURL=realmadrid.css.map */
 .error{
+  font-size: 13px;
+  margin: 5px;
+  font-weight: 500;
+  color:red;
+  display: none;
+  text-align: start;
+}
+
+.error_confirm {
+  font-size: 13px;
+  margin: 5px;
+  font-weight: 500;
+  color:red;
+  display: none;
+  text-align: start;
+}
+
+.error_unconfirm{
   font-size: 13px;
   margin: 5px;
   font-weight: 500;
