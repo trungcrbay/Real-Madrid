@@ -674,14 +674,27 @@ h2,p,span,.news_heading{
 
 .banner_heading{
   position: absolute;
-  top: 60%;
-  left: 19%;
+  display: flex;
+  align-items: center;
+  top: 80%;
+  left: 40%;
   line-height: 75px;
   font-weight: bold;
   text-align: center;
   font-size: 50px;
   color:var(--primary-color);
   font-family: 'Oswald', sans-serif;
+}
+
+.banner_heading h2{
+  color:#fff;
+  font-size: 35px;
+  margin:  35px 10px;
+}
+
+.banner_heading-img{
+  width: 100px;
+  margin-bottom: 15px;
 }
 
 .banner_icon{
@@ -1115,7 +1128,6 @@ h2,p,span,.news_heading{
   z-index: 333;
   transform: translateX(-100%); /*đẩy ra khỏi màn hình*/
   transition: all linear 0.3s;
-  
 }
 
 .nav__mobile-close{
