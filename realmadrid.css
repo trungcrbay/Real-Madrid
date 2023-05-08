@@ -180,6 +180,7 @@ li{
   display: flex;
   margin-left: 50px;
   gap: 60px;
+
 }
 
 .real_tv_item{
@@ -1183,4 +1184,10 @@ h2,p,span,.news_heading{
   padding:16px;
   margin-left: 24px;
   font-size: 1.4rem;
+}
+
+.logo__content{
+  margin: 0 auto;
+  display: block;
+  padding-bottom: 20px;
 }
