@@ -161,7 +161,7 @@ li {
 .slider {
   padding-top  : 100px;
   width        : 1170px;
-  height       : 800px;
+  height       : 862px;
   border-radius: 10px;
   overflow     : hidden;
   margin       : 0 auto;
@@ -1182,6 +1182,20 @@ span,
   transform       : translateX(-100%);
   /*đẩy ra khỏi màn hình*/
   transition      : all linear 0.3s;
+}
+
+.nav_logo_div{
+  margin: 0 auto;
+  display: block;
+  position: relative;
+}
+
+.nav_logo_a{
+  position: absolute;
+  top: 50%;
+  right: 43%;
+  transform: translate(-50%, -50%);
+  
 }
 
 .nav__mobile-close {

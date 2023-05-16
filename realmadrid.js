@@ -1,20 +1,24 @@
 //Chuyển slide
 var counter = 1;
-const sliderImage = setInterval(function () {
+function carouselImage() {
     document.getElementById('radio' + counter).checked = true;
     counter++;
     if (counter > 4) {
         counter = 1;
     }
-}, 1500)
-const radioButtons = document.querySelectorAll('[name="btn-radio"]');
-radioButtons.forEach(function (radio) {
+}
+const sliderImage = setInterval(carouselImage, 1500)
+
+function stopCarouselImage(radio) { //
     radio.onclick = function () {
-        if (this.checked = true) {
+        if (radio.checked = true) {
             clearInterval(sliderImage);
         }
     }
-});
+}
+
+const radioButtons = document.querySelectorAll('[name="btn-radio"]');
+radioButtons.forEach(stopCarouselImage); //có thể dùng forEach vì querySelectorAll trả về một danh sách các phần tử tương tự như  1 mảng(NodeList)
 
 //Sign in / Sign up
 const formOpenBtn = document.querySelector('.form-open'),
