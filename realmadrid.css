@@ -1236,3 +1236,21 @@ span,
   display       : block;
   padding-bottom: 20px;
 }
+
+.heading_page .content .heading_page_h1{
+  margin:50px auto;
+  width: 800px;
+  text-align: center;
+  display: block;
+  line-height: 1.5;
+  color:var(--secondary-color);
+}
+
+.highlights{
+  color:transparent;
+  background-color: #4158D0;
+  background-image: linear-gradient(43deg,#4158D0 0%, #C850C0 46%, #FFCC70 100%);
+  background-clip: text;
+  -webkit-background-clip: text;/*màu đổ vào đoạn dc hightlights ->> transparent color*/
+  /*->> thêm webkit vì gg chrome chưa hỗ trợ*/
+}
