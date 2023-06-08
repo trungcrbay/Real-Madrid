@@ -1254,3 +1254,67 @@ span,
   -webkit-background-clip: text;/*màu đổ vào đoạn dc hightlights ->> transparent color*/
   /*->> thêm webkit vì gg chrome chưa hỗ trợ*/
 }
+
+.modal_legend{
+  border-radius:10px;
+  width: 900px;
+  height: 450px;
+  background-color: #fff;
+  position: fixed;
+  top:20%;
+  left:20%;
+  z-index:101;
+  display: none;
+}
+.modal_content_background{
+  background:red;
+  height: 450px;
+  width: 300px;
+  position: absolute;
+  z-index:101;
+  border-radius: 10px 0 0 10px;
+}
+.modal_content{
+  padding-left: 20em;
+}
+
+.modal_content_main{
+  margin-top: 40px;
+}
+
+.infor_player{
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  gap:150px;
+}
+
+.icon_close_modal{
+  position: absolute;
+  top: 10px;
+  right:20px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.quote_modal{
+  font-style: italic;
+}
+
+.goals , .appearances{
+  text-align: center; 
+}
+
+.birth ,.nationality ,.quote_modal{
+  margin-top: 20px;
+  z-index: 811;
+}
+
+.img_modal{
+  position: absolute;
+  bottom:-15px;
+  height: 450px;
+  width: 630px;
+  right: -80px;
+  object-fit: contain;
+}
