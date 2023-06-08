@@ -286,6 +286,7 @@ document.onkeydown = function (e) {
             formContainer.classList.add("opacity")
             overlay.style.display = 'none';
             forgotPW_block.style.display="none"
+            modalLegend.style.display='none'
     }
 }
 
