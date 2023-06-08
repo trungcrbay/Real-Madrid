@@ -1255,6 +1255,15 @@ span,
   /*->> thêm webkit vì gg chrome chưa hỗ trợ*/
 }
 
+@keyframes fadeIn {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
 .modal_legend{
   border-radius:10px;
   width: 900px;
@@ -1265,6 +1274,7 @@ span,
   left:20%;
   z-index:101;
   display: none;
+  animation: fadeIn 1s ease-in;
 }
 .modal_content_background{
   background:red;
